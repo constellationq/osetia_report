@@ -1,7 +1,9 @@
 # osetia_report
-##создание символических ссылок
+#создание символических ссылок
 ln -s <целевой файл> <имя ссылки> 
-##fastqc  оценка 
+#fastqc  оценка 
 fastqc raw_data/*.fastq.gz -o quality_of_raw_data
-##multiqc
+#multiqc
 multiqc quality_of_raw_data -o quality_of_raw_data -f
+#посмотреть отчеты можно через lynx
+lynx <file_name>
